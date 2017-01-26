@@ -1,17 +1,18 @@
 body {
   font-size: 14px;
-  line-height: 24px;
-  color: #000000;
+  line-height: 1.714em;
   font-weight: bold;
-  font-family: "PT Sans Narrow", "Arial Narrow Bold", sans-serif;
+  font-family: "PT Sans Narrow", "Charcoal", sans-serif;
+  color: #000000;
+  background-color: #f8f5f2;
 }
 
 h2 {
   font-size: 30px;
-  line-height: 42px;
+  line-height: 1.4em;
 }
 
 h3 {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.286em;
 }
