@@ -1,4 +1,17 @@
+html,
 body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  min-width: 960px;
   font-size: 14px;
   line-height: 1.714em;
   font-weight: bold;
@@ -7,12 +20,287 @@ body {
   background-color: #f8f5f2;
 }
 
-h2 {
+.main-header {
+  margin-bottom: 60px;
+  height: 70px;
+  /*для наглядности*/
+  outline: 2px solid crimson;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /*для наглядности*/
+  outline: 3px solid seagreen;
+}
+
+.main-header .container {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+.logo {
+  float: left;
+  width: 140px;
+  padding-top: 17px;
+  padding-bottom: 25px;
+  margin-right: 15px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-navigation {
+  float: left;
+  width: 540px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /*для наглядности*/
+  outline: 4px solid palevioletred;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.login {
+  float: right;
+  width: 140px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.index-logo {
+  width: 368px;
+  margin: 0 auto 25px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.advantages {
+  margin-bottom: 80px;
+  /*для наглядности*/
+  outline: 3px solid greenyellow;
+}
+
+.advantages-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 4px solid mediumspringgreen;
+}
+
+.advantages-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.index-content:last-child {
+  margin-bottom: 0;
+}
+
+.left {
+  float: left;
+  width: 375px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.right {
+  float: right;
+  width: 300px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+/*catalog-item.html*/
+.index-content-title {
+  margin-bottom: 15px;
   font-size: 30px;
   line-height: 1.4em;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.breadcrumbs {
+  margin-bottom: 50px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
 }
 
 h3 {
   font-size: 14px;
   line-height: 1.286em;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.item-gallery {
+  float: left;
+  width: 460px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.item-description {
+  float: right;
+  width: 390px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.big-picture {
+  display: block;
+  margin-bottom: 20px;
+  /*для наглядности*/
+  outline: 2px solid palevioletred;
+}
+
+.small-picture {
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 2px solid palevioletred;
+}
+
+.small-picture:last-child {
+  margin-right: 0px;
+}
+
+.benefits {
+  padding-top: 20px;
+  margin-bottom: 35px;
+  /*для наглядности*/
+  outline: 2px solid palevioletred;
+}
+
+.item-status {
+  float: left;
+  width: 190px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  /*для наглядности*/
+  outline: 2px solid palevioletred;
+}
+
+.item-articul {
+  float: right;
+  width: 190px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  /*для наглядности*/
+  outline: 2px solid palevioletred;
+}
+
+.product-description {
+  margin: 0;
+  /*для наглядности*/
+  outline: 4px solid black;
+}
+
+.price {
+  height: 40px;
+  /*для наглядности*/
+  outline: 2px solid palevioletred;
+}
+
+.features p {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 1.25em;
+  /*для наглядности*/
+  outline: 2px solid palevioletred;
+}
+
+/*catalog.html*/
+.filtr-products {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.catalog {
+  float: left;
+  width: 700px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 220px;
+  height: 290px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /*для наглядности*/
+  outline: 4px solid palevioletred;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pagination {
+  height: 40px;
+  margin-top: 25px;
+  /*для наглядности*/
+  outline: 4px solid mediumspringgreen;
+}
+
+.pagination li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-footer {
+  margin-top: 65px;
+  height: 190px;
+  /*для наглядности*/
+  outline: 2px solid crimson;
+}
+
+.main-footer .container {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.footer-social {
+  float: left;
+  width: 240px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.footer-copyright {
+  float: right;
+  width: 140px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
 }
